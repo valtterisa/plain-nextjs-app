@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  nextjs:
+    container_name: nextjs-preview
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: production
+      PORT: 8080
+    command: ["node", "server.js"]
