@@ -12,6 +12,6 @@ EXPOSE 8080
 
 ENV PORT=8080
 
-
+ENTRYPOINT ["node","docker-entrypoint.js"]
 CMD ["npm", "run", "dev"]
 
