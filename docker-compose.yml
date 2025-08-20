@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   nextjs:
+    image: plain-nextjs-app:latest
     container_name: nextjs-preview
     build:
       context: .
